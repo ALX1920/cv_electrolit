@@ -879,3 +879,98 @@ a {
         align-items: flex-start;
     }
 }
+
+/* BOTONES DEL CV IGUALES A LOS DEL PORTAFOLIO */
+.cv-menu {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 20px 0 40px;
+    flex-wrap: wrap;
+}
+
+.cv-menu__item {
+    padding: 10px 18px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #e5e5e5;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+.cv-menu__item:hover {
+    background: #00ff9d;
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ENCABEZADO */
+.header {
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+/* LOGO AM */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo__circle {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #00ff9d, #00c8ff, #8a2be2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: #000;
+}
+
+.logo__text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* MENÚ */
+.nav {
+    display: flex;
+    gap: 28px;
+}
+
+.nav a {
+    color: #e5e5e5;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.25s ease;
+}
+
+.nav a:hover {
+    color: #00ff9d;
+}
+
+/* BOTÓN CONTACTO DESTACADO */
+.nav__highlight {
+    color: #00c8ff;
+    font-weight: 600;
+}
